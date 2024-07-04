@@ -32,3 +32,14 @@ function validateForm() {
     alert('Inputan ada yang kosong');
   }
 }
+
+// Function to get the user's name
+function getUserName() {
+  // Replace prompt() with your preferred method for obtaining the user's name
+  let userName = prompt("Please enter your name:");
+  return userName;
+}
+
+// Get the user's name and update the span element
+let userName = getUserName();
+document.getElementById("userName").textContent = userName;
