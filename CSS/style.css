@@ -1,0 +1,89 @@
+main{
+    padding: 32px;
+}
+
+.nav-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon {
+    margin-left: 40px;
+    height: 50px;
+    width:50px;
+
+    background-image: url("../assets/upr.jpg"); 
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav>a {
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid;
+}
+
+.banner-container {
+    height: 350px;
+    width: 100%;
+    border: 1px solid;
+    /* Added properties for image positioning */
+    overflow: hidden;
+  }
+  
+  .banner-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the container */
+  }
+
+.profile-content{
+  display: flex; /* Make the container a flexbox */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Align items vertically in the center */
+}
+.profile-item {
+    text-align: center;
+    flex: 1;
+    text-align: -webkit-center;
+}
+
+.profile-icon {
+    height: 63px;
+    width:104px;
+
+    background-size: cover;
+    border-radius:50%;
+}
+
+.profile-1 {
+    background-image: url("../assets/hd\ LOGO-hmti.jpg"); 
+}
+
+.banner-container-portofolio {
+    height: 350px;
+    width: 100%;
+    border: 1px solid;
+    /* Added properties for image positioning */
+    overflow: hidden;
+  }
+  
+  .banner-container-portofolio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the container */
+  }
+.portofolio-content{
+    display: flex; /* Make the container a flexbox */
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Align items vertically in the center */
+  }
+
+
+@media only screen and (max-width: 500px) {
+    .nav-container{
+        flex-direction: column;
+
+    }
+}

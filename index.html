@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Ahsana</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="nav-container">
+        <div class="logo-icon"></div>
+
+        <nav>
+            <a>Home</a>
+            <a href="#our-profile">Our Profile</a>
+            <a href="#our-portofolio">Portofolio</a>
+            <a href="#our-contact">Message Us</a>
+        </nav>
+    </header>
+
+    <hr />
+
+    <!-- INI ADALAH BAGIAN HOME -->
+    <main>
+        <section >
+            <header>
+                <h1>Hi User, Welcome to Website Teknik Informatika Universitas Palangka Raya</h1>
+            </header>
+
+            <article> 
+                <p>Jurusan/Program Studi Teknik Informatika berdiri pada tahun 2004, berdasarkan SK Rektor UPR No.294/J.24/KP/2004, yaitu tanggal 20 Juli 2004 di buka Program Studi baru di lingkungan Fakultas Teknik yaitu Program Studi Teknik Informatika (S.1).</p>
+                <p>Selanjutnya dengan dikeluarkannya SK Dirjen Dikti No.4889/D/T/2006 tanggal 21 Desember 2006 maka disetujui program baru ini dengan nama jurusan/Program Studi Teknik Informatika (S.1).</p>
+
+
+                <div class="banner-container">
+                    <img src="assets/1.jpg" alt="Banner Image">
+                </div>
+
+                <h1>VISI & MISI</h1>
+                <p><b>Visi Jurusan Teknik Informatika :</b>
+                    <br>Menjadi Jurusan Teknik Informatika yang terkemuka dan terpercaya di tingkat nasional untuk menghasilkan Sumber Daya Manusia (SDM) yang profesional dalam penerapan Ilmu Pengetahuan dan Teknologi (IPTEK) di bidang software development pada tahun 2025
+                </p>
+
+                <p><b>Misi Jurusan Teknik Informatika :</b>
+                    <ol type="1">
+                        <li>Menyelenggarakan pendidikan dan pengajaran di bidang Teknik Informatika yang berorientasi pada peningkatan kualitas Sumber Daya Manusia (SDM).</li>
+                        <li>Mengembangkan kecakapan, kepemimpinan dan komunikasi dalam bidang Teknik Informatika.</li>                 
+                        <li>Menyelenggarakan penelitian yang inovatif dan aplikatif di bidang Teknik Informatika.</li>
+                        <li>Melaksanakan pengabdian pada masyarakat yang mendukung pembangunan daerah dan nasional. </li>    
+                    </ol>
+            </article>
+        </section>
+        <hr />
+
+        <!-- INI ADALAH BAGIAN PROFILE -->
+
+        <section id="our-profile">
+            <header>
+                <h1>Our Organization</h1>
+            </header>
+
+            <article class="profile-content">
+                <div class="profile-item">
+                    <div class="profile-icon profile-1"></div>
+                    <p>Profile HMTI UPR</p>
+                </div>
+            
+                
+            </article>
+        </section>
+        <hr />
+
+        <!-- INI ADALAH BAGIAN PORTOFOLIO -->
+        <section id="our-portofolio">
+            <header>
+                <h1>Our Portofolio</h1>
+            </header>
+
+            <article class="portofolio-content">
+                <div class="banner-container-portofolio">
+                    <img src="assets/2.jpg" alt="Banner Image">
+                </div>
+                
+            </article>
+        </section>
+        <hr />
+
+        <!-- INI ADALAH BAGIAN CONTACT -->
+        <section id="our-contact">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+
+            <article style="display: flex; justify-content: space-between;">
+                <form> 
+                 <table>
+                     <tr>
+                         <td> <label for="nama">Nama:</label></td>
+                         <td><input placeholder="Nama" type="text" id="nama" required> </td>
+                     </tr>
+                     <tr>
+                         <td> <label for="tanggal">Tanggal Lahir:</label></td>
+                         <td><input type="date" id="tanggal"> </td>
+                     </tr>
+                     <tr>
+                         <td> <label for="jeniskelamin">Jenis Kelamin:</label></td>
+                         <td><input type="radio" id="male" name="gender" value="male"> </td>
+                         <td> <label for="male">Laki-Laki</label></td>
+                         <td><input type="radio" id="female" name="gender" value="female"> </td>
+                         <td> <label for="male">Perempuan</label></td>
+                     </tr>
+                     <tr>
+                        <td> <label>Pesan:</label></td>
+                        <td> <textarea placeholder="Pesan" name="messages"></textarea>
+                    </tr>
+                     <tr>
+                         <td rowspan="2"> 
+                         <button type="button" onclick="validateForm();">Submit</button>
+                         </td>
+                     </tr>
+                 </table>
+     
+                </form>
+     
+                <div id="result" style="border: 1px solid; height: 175px; width: 325px;"></div>
+
+            </article>
+
+        </section>
+        <hr />
+
+    
+        <script src="js/script.js"></script>
+    </main>
+</body>
+</html>
